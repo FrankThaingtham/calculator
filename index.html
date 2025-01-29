@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    /* Basic styling for the calculator */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+
+    .calculator {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      overflow: hidden;
+    }
+
+    .display {
+      background: #222;
+      color: #fff;
+      font-size: 2rem;
+      padding: 20px;
+      text-align: right;
+      border-bottom: 2px solid #444;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: #444;
+    }
+
+    button {
+      font-size: 1.5rem;
+      padding: 20px;
+      background: #eaeaea;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    button:active {
+      background: #ddd;
+    }
+
+    .operator {
+      background: #f9a825;
+      color: white;
+    }
+
+    .operator:active {
+      background: #f57f17;
+    }
+
+    .equals {
+      grid-column: span 2;
+      background: #388e3c;
+      color: white;
+    }
+
+    .equals:active {
+      background: #2e7d32;
+    }
+
+    .clear {
+      background: #d32f2f;
+      color: white;
+    }
+
+    .clear:active {
+      background: #c62828;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <!-- Display -->
+    <div class="display">0</div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="clear">C</button>
+      <button class="backspace">←</button>
+      <button class="operator">/</button>
+      <button class="operator">*</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">-</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">+</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="equals">=</button>
+
+      <button>0</button>
+      <button>.</button>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>
